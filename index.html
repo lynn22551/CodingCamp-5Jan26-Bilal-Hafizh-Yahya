@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List Mini Project</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>My To-Do List</h1>
+        </header>
+
+        <form id="todo-form">
+            <div class="input-group">
+                <input type="text" id="todo-input" placeholder="Tugas baru..." required>
+                <input type="date" id="date-input" required>
+            </div>
+            <button type="submit" id="add-btn">Tambah</button>
+        </form>
+
+        <div class="filter-container">
+            <select id="filter-todo">
+                <option value="all">Semua</option>
+                <option value="completed">Selesai</option>
+                <option value="uncompleted">Belum Selesai</option>
+            </select>
+        </div>
+
+        <div class="todo-container">
+            <ul class="todo-list"></ul>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
